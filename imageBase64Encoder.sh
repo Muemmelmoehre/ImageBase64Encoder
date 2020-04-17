@@ -10,5 +10,5 @@ then
 	echo "ex.: ./imageBase64Encoder.sh image.jpeg out.html jpeg"
 else
 	imageBase64=$(base64 $image)
-	echo "<img src=\"data:image/$format;base64,"$imageBase64"\">" > $outfile
+	echo "<img src=\"data:image/$format;base64,$imageBase64\">" > $outfile
 fi
